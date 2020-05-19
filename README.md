@@ -1,4 +1,4 @@
-# SquareNeighborhoodClassifier
+# Square Neighborhood Classifier
 
 Let's say we have a universe that has limited size by minimum and maximum value of two table attributes.<br>
 We assume this universe is a big square and divide it into smaller squares like we do in convolutional operation.<br>
