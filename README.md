@@ -1,4 +1,6 @@
-# Square Neighborhood Classifier
+<p align="center">
+  <img height="100%" src="snc-image.jpg" alt="snc-logo">
+</p>
 
 <h2>Install</h2>
 
