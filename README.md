@@ -15,3 +15,11 @@ Now let's assume we have a data row to predict its class(or which gang it belong
   <li>Else let's increase our visibility distance and search for neighbor squares and make a prediction by using neighbor squares' opinions like we do in random forest.</li>
   <li>We have weightly determined classes in each square. But it is not enough. We also check count in each square to make another weighted prediction.</li>
 </ol>
+
+<h2>GTA San Andreas Map</h2>
+
+!["GTA San Andreas Map"](gta-sa-map.webp)
+
+<h2>Square Neighborhood Map</h2>
+
+!["Square Neighborhood Map"](square-neighborhood-classifier.png)
