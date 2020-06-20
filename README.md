@@ -27,3 +27,35 @@ Now let's assume we have a data row to predict its class(or which gang it belong
 <h2>Square Neighborhood Map</h2>
 
 !["Square Neighborhood Map"](square-neighborhood-classifier.png)
+
+<h2>Main</h2>
+
+```python
+import pandas
+from SquareNeighborhoodClassifier import SquareNeighborhoodClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn import datasets
+
+X_train = pandas.DataFrame(datasets.load_breast_cancer().data)[[0,1]]
+
+y_train = datasets.load_breast_cancer().target
+
+X_train, X_test, y_train, y_test = train_test_split(X_train, y_train, test_size=0.33, random_state=42) 
+
+model = SquareNeighborhoodClassifier(14, epoch=0, onlySetNone=True)
+model.fit(X_train, y_train)
+print("SNC Accuracy Score:", model.score(X_test, y_test))
+
+model2 = KNeighborsClassifier(n_neighbors=225)
+model2.fit(X_train, y_train)
+print("KNN Accuracy Score:", model2.score(X_test, y_test))
+```
+
+```
+Data points are being added to initial squares: 381/381 | Remaining: 00:00
+Calculating value of each square: 196/196
+Epoch (extended): 6/6
+SNC Accuracy Score: 0.8936170212765957
+KNN Accuracy Score: 0.851063829787234
+```
