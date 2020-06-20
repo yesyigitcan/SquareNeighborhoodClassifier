@@ -2,6 +2,12 @@
 
 <h2>Install</h2>
 
+GitHub
+
+`pip install git+https://github.com/yesyigitcan/SquareNeighborhoodClassifier`
+
+PyPI
+
 `pip install -i https://test.pypi.org/simple/ SquareNeighborhoodClassifier`
 
 <h2>Inspiration</h2>
