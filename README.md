@@ -1,5 +1,9 @@
 # Square Neighborhood Classifier
 
+<h2>Install</h2>
+
+`pip install -i https://test.pypi.org/simple/ SquareNeighborhoodClassifier`
+
 <h2>Inspiration</h2>
 If you ever played GTA San Andreas, you know there are some gangs that capture neighborhoods. These captured neighborhoods are represented as squares in different colors. SquareNeighborhoodClassifier works similarly.
 
